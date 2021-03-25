@@ -281,7 +281,7 @@ client.on('messageDelete', async mesajsilme=> {
   .setTimestamp()
   .setFooter('Raviwen The LUCIFER')
   let kanal = client.channels.cache.get(config.Channels.mesajsilme);
-  kanal.send(silinenmesaj).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 282. Satır '));
+  kanal.send(silinenmesaj).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 284. Satır '));
 })
 
 //// Mesaj Düzenleme Log
@@ -302,7 +302,7 @@ client.on('messageUpdate', async (oldMessage, newMessage) => {
     .setTimestamp()
     .setFooter('Raviwen The LUCIFER')
     let kanal = client.channels.cache.get(config.Channels.mesajdüzenleme);
-    kanal.send(mesajgüncelleme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 303. Satır '));
+    kanal.send(mesajgüncelleme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 305. Satır '));
 
 })
 
