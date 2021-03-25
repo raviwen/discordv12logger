@@ -1,0 +1,28 @@
+{
+   "Settings": {
+       "Token": "TOKEN",
+       "Durum": "discord.gg/striga",
+       "VoiceID": "VOICECHANNELID"
+
+   },
+   "Channels": {
+     "sunucugüncelleme": "LOGID",
+     "kanaloluşturma": "LOGID",
+     "kanaldüzenleme": "LOGID", 
+     "kanalsilme": "LOGID",
+     "banatma": "LOGID",
+     "bankaldırma": "LOGID", 
+     "üyerolgüncelleme": "LOGID", 
+     "botekleme": "LOGID",
+     "rololuşturma": "LOGID", 
+     "rolgüncelleme": "LOGID",
+     "rolsilme": "LOGID",
+     "webhook": "LOGID", 
+     "emojioluşturma": "LOGID",
+     "emojigüncelleme": "LOGID",
+     "emojisilme": "LOGID",
+     "mesajsilme": "LOGID",
+     "mesajdüzenleme": "LOGID"
+
+   }
+}

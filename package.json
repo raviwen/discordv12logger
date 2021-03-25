@@ -1,0 +1,14 @@
+{
+  "name": "raviwen-logger",
+  "version": "0.0.1",
+  "description": "Raviwen v12 Logger",
+  "main": "raviwen.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "author": "Raviwen-Wapper",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
