@@ -121,20 +121,6 @@ client.on('guildBanRemove', async (guild, unbanned) => {
     let kanal = client.channels.cache.get(config.Channels.bankaldırma);
     kanal.send(bankaldırma).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 122. Satır '));
 })
-//// Üye Rolü Güncelleme
-client.on('guildMemberUpdate', async (oldMember, newMember) => {
-    let Raviwen = await newMember.guild.fetchAuditLogs({type: 'MEMBER_ROLE_UPDATE'}).then(audit => audit.entries.first());
-    if (!Raviwen || !Raviwen.executor) return;
-    const rolverme = new Discord.MessageEmbed()
-    .setTitle('**[Üyenin Rolü Güncellendi]**')
-    .setColor('GREEN')
-    .setDescription(`Rolü Güncellenen ID: \`${newMember.id}\` \n Rolünü Güncelleyen: ${Raviwen.executor} \`${Raviwen.executor.id}\``)
-    .addField(`Rolü Güncellenen Üye:`, newMember)
-    .setTimestamp()
-    .setFooter('Raviwen The LUCIFER')
-    let kanal = client.channels.cache.get(config.Channels.üyerolgüncelleme);
-    kanal.send(rolverme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 136. Satır '));
-})
 //// Bot Ekleme
 client.on('guildMemberAdd', async botekleme => {
     let ravi = await botekleme.guild.fetchAuditLogs({type: 'BOT_ADD'}).then(audit => audit.entries.first());
@@ -148,7 +134,7 @@ client.on('guildMemberAdd', async botekleme => {
     .setTimestamp()
     .setFooter('Raviwen The LUCIFER')
     let kanal = client.channels.cache.get(config.Channels.botekleme);
-    kanal.send(eklenenbot).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 151. Satır '));
+    kanal.send(eklenenbot).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 137. Satır '));
 
 })
 //// Rol Oluşturma
@@ -165,7 +151,7 @@ client.on('roleCreate', (role) => {
        .setTimestamp()
        .setFooter('Raviwen The LUCIFER')
        let kanal = client.channels.cache.get(config.Channels.rololuşturma);
-       kanal.send(rololuşturma).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 168. Satır '));
+       kanal.send(rololuşturma).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 154. Satır '));
     })
   })
 
@@ -185,7 +171,7 @@ client.on('roleUpdate', (oldRole, newRole) => {
          .setTimestamp()
          .setFooter('Raviwen The LUCIFER')
          let kanal = client.channels.cache.get(config.Channels.rolgüncelleme);
-         kanal.send(rolgüncelleme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 188. Satır '));
+         kanal.send(rolgüncelleme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 174. Satır '));
       }
     })
    })
@@ -203,7 +189,7 @@ client.on('roleDelete', (role) => {
        .setTimestamp()
        .setFooter('Raviwen The LUCIFER')
        let kanal = client.channels.cache.get(config.Channels.rolsilme);
-       kanal.send(rolsilme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 206. Satır '));
+       kanal.send(rolsilme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 192. Satır '));
     })
   })
 
@@ -219,7 +205,7 @@ client.on('webhookUpdate', async webhook => {
    .setTimestamp()
    .setFooter('Raviwen The LUCIFER')
    let kanal = client.channels.cache.get(config.Channels.webhook);
-   kanal.send(webhookcreate).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 222. Satır '));
+   kanal.send(webhookcreate).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 208. Satır '));
 })
 //// Emoji Oluşturma
 client.on('emojiCreate', async emoji => {
@@ -234,7 +220,7 @@ client.on('emojiCreate', async emoji => {
     .setTimestamp()
     .setFooter('Raviwen The LUCIFER')
     let kanal = client.channels.cache.get(config.Channels.emojioluşturma);
-    kanal.send(emojioluşturma).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 237. Satır '));
+    kanal.send(emojioluşturma).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 223. Satır '));
 })
 //// Emoji Düzenleme
 client.on('emojiUpdate', async (oldEmoji, newEmoji) => {
@@ -249,7 +235,7 @@ client.on('emojiUpdate', async (oldEmoji, newEmoji) => {
     .setTimestamp()
     .setFooter('Raviwen The LUCIFER')
     let kanal = client.channels.cache.get(config.Channels.emojigüncelleme);
-    kanal.send(emojigüncelleme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 252. Satır '));
+    kanal.send(emojigüncelleme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 238. Satır '));
 })
 //// Emoji Silme
 client.on('emojiDelete', async emoji => {
@@ -264,7 +250,7 @@ client.on('emojiDelete', async emoji => {
     .setTimestamp()
     .setFooter('Raviwen The LUCIFER')
     let kanal = client.channels.cache.get(config.Channels.emojisilme);
-    kanal.send(emojisilme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 267. Satır '));
+    kanal.send(emojisilme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 253. Satır '));
 })
 //// Mesaj Silme Log
 client.on('messageDelete', async mesajsilme=> {
@@ -281,7 +267,7 @@ client.on('messageDelete', async mesajsilme=> {
   .setTimestamp()
   .setFooter('Raviwen The LUCIFER')
   let kanal = client.channels.cache.get(config.Channels.mesajsilme);
-  kanal.send(silinenmesaj).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 284. Satır '));
+  kanal.send(silinenmesaj).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 270. Satır '));
 })
 
 //// Mesaj Düzenleme Log
@@ -302,7 +288,7 @@ client.on('messageUpdate', async (oldMessage, newMessage) => {
     .setTimestamp()
     .setFooter('Raviwen The LUCIFER')
     let kanal = client.channels.cache.get(config.Channels.mesajdüzenleme);
-    kanal.send(mesajgüncelleme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 305. Satır '));
+    kanal.send(mesajgüncelleme).catch(err => console.log('Mesaj gönderceğim kanalı bulamadım veya Mesaj gönderemedim. raviwen.js / 291. Satır '));
 
 })
 
