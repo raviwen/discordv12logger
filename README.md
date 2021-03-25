@@ -17,5 +17,9 @@ config.json Dosyanın içerisini doldurmanız ve start vermeniz yeterlidir.
 
 Herhangi bir sorunda ; https://discord.gg/striga Code sunucumuza gelip abone rolü alıp destek alabilirsin.
 
+# Hangi Modül Gerekli ? 
+
+Sadece discord.js modülünü yükleyerek botumuzu çalıştırabilirsiniz.
+
 
 # BİLGİLENDİRME, Projenin farklı bir ad ile paylaşılması, ücretli satılması ve şahsına aitmiş gibi davranılması yasaktır. Projemiz lisanslı olup, bu tarz durumlarda lisans aracılığı ile gerekli işlemler yapılacaktır.
