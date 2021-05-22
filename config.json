@@ -1,28 +1,28 @@
 {
    "Settings": {
-       "Token": "TOKEN",
-       "Durum": "discord.gg/striga",
-       "VoiceID": "VOICECHANNELID"
+       "Token": "ODQ1NzAyODM4ODM0NjkyMTA3.YKk0JQ.00qp-Oiq2bR39FN4FAb6mufTREQ",
+       "Durum": "logların kralı weoıgjroıj",
+       "VoiceID": "845705089451556924"
 
    },
    "Channels": {
-     "sunucugüncelleme": "LOGID",
-     "kanaloluşturma": "LOGID",
-     "kanaldüzenleme": "LOGID", 
-     "kanalsilme": "LOGID",
-     "banatma": "LOGID",
-     "bankaldırma": "LOGID", 
-     "üyerolgüncelleme": "LOGID", 
-     "botekleme": "LOGID",
-     "rololuşturma": "LOGID", 
-     "rolgüncelleme": "LOGID",
-     "rolsilme": "LOGID",
-     "webhook": "LOGID", 
-     "emojioluşturma": "LOGID",
-     "emojigüncelleme": "LOGID",
-     "emojisilme": "LOGID",
-     "mesajsilme": "LOGID",
-     "mesajdüzenleme": "LOGID"
+     "sunucugüncelleme": "845703401761275974",
+     "kanaloluşturma": "845703475126992916",
+     "kanaldüzenleme": "845703507906527294", 
+     "kanalsilme": "845703566705819678",
+     "banatma": "845703627372888104",
+     "bankaldırma": "845704448205520916", 
+     "üyerolgüncelleme": "845703730518818826", 
+     "botekleme": "845703782104432670",
+     "rololuşturma": "845703844985700402", 
+     "rolgüncelleme": "845703885834289202",
+     "rolsilme": "845703928996692058",
+     "webhook": "845703969607385109", 
+     "emojioluşturma": "845704010987864074",
+     "emojigüncelleme": "845704053047820358",
+     "emojisilme": "845704097898037309",
+     "mesajsilme": "845704119528325150",
+     "mesajdüzenleme": "845704164041293834"
 
    }
 }
